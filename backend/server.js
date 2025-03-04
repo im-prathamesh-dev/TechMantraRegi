@@ -27,7 +27,7 @@ app.use("/api/v1/register", registerRoute)
 
 
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 10000;
 
 //run listen
 app.listen(PORT, ()=>{

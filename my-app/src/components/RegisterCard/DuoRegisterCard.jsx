@@ -94,7 +94,7 @@ const validateForm = () => {
 
 // }
 function handleProceed (){
-    console.log(formData);
+    // console.log(formData);
     if (!formData.clgname || !formData.name || !formData.email || !formData.class || !formData.event|| !formData.number || formData.participants.length < 1  ||formData.participants.every((p) => p.trim() == "" )){
         alert("Fill the information");
         

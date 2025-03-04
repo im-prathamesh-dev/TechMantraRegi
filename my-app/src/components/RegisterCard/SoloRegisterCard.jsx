@@ -81,7 +81,7 @@ const handleChanges = (e) => {
 
 // }
   function handleProceed (){
-    console.log(formData);
+    // console.log(formData);
     if (!formData.clgname || !formData.name || !formData.email || !formData.class || !formData.event|| !formData.number ){
         alert("Fill the information");
         

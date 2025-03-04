@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function PaymentButton({amount,data}) {
-  console.log("Payment Button" , amount);
+  // console.log("Payment Button" , amount);
   let paymentAmount = amount * 100;
   // if(amount === 50){
   //     paymentAmount = 200;
@@ -11,7 +11,7 @@ export default function PaymentButton({amount,data}) {
   //     console.log("RE", paymentAmount)
   // }
   const RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_ID; // Ensure this is correctly loaded
-  console.log("RazorPAy Key ID", RAZORPAY_KEY_ID);
+  // console.log("RazorPAy Key ID", RAZORPAY_KEY_ID);
   // const fee = props.fees.Totalfees;
 
   const handlePayment = async () => {
@@ -23,7 +23,7 @@ export default function PaymentButton({amount,data}) {
 
     try {
       // API call to create an order
-      const response = await fetch("http://localhost:8000/api/v1/register/makePayment", {
+      const response = await fetch("https://techmantraregi.onrender.com/api/v1/register/makePayment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export default function PaymentButton({amount,data}) {
       });
 
       const order = await response.json();
-      console.log(order);
+      // console.log(order);
 
       const options = {
         key: RAZORPAY_KEY_ID,
@@ -42,14 +42,14 @@ export default function PaymentButton({amount,data}) {
         description: "Payment for Event Registration",
         order_id: order.id, // The Order ID from Razorpay backend
         handler: async (response) => {
-          console.log("Payment Successful:", response);
-          console.log("Payment ID:", response.razorpay_payment_id);
+          // console.log("Payment Successful:", response);
+          // console.log("Payment ID:", response.razorpay_payment_id);
           
           alert(`Payment Successful! Your Payment ID: ${response.razorpay_payment_id}`);
       
           // Now send the Payment ID to your backend
           try {
-            const verifyResponse = await fetch("http://localhost:8000/api/v1/register/verify-payment", {
+            const verifyResponse = await fetch("https://techmantraregi.onrender.com/api/v1/register/verify-payment", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
@@ -60,13 +60,13 @@ export default function PaymentButton({amount,data}) {
             });
       
             const verificationData = await verifyResponse.json();
-            console.log("Payment Verification:", verificationData);
+            // console.log("Payment Verification:", verificationData);
       
             if (verifyResponse.ok) {
               alert("Payment verified successfully!");
       
               // Register the user after successful payment verification
-              await fetch("http://localhost:8000/api/v1/register/makeRegistration", {
+              await fetch("https://techmantraregi.onrender.com/api/v1/register/makeRegistration", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ data, payment_id: response.razorpay_payment_id }), // ✅ Sending Payment ID to Backend
