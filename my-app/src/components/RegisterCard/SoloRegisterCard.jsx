@@ -126,6 +126,11 @@ const handleChanges = (e) => {
       <p className="text-md font-semibold">Vaishnav Ghadge: 7218329602</p>
       <p className="text-md font-semibold">Anurag Shastri: 7798177002</p>
 
+      {/* Disclaimer Message */}
+  <div className="bg-yellow-300 text-gray-900 text-center p-3 mt-4 rounded-lg shadow-md w-full max-w-md">
+    ⚠️ <strong>Disclaimer:</strong> While registering, please wait until you Check the <strong>"Registration successful!"</strong> alert box after making payment.
+  </div>
+
       {/* Form Container */}
       <div className="bg-white shadow-2xl rounded-2xl p-8 mt-6 w-full max-w-md text-gray-900">
         <div className="flex flex-col gap-4">
