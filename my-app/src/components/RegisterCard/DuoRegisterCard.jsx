@@ -125,6 +125,10 @@ function handleProceed (){
   </p>
   <p className=" font-semibold text-center">Vaishnav Ghadge: 7218329602</p>
   <p className=" font-semibold text-center">Anurag Shastri: 7798177002</p>
+      {/* Disclaimer Message */}
+      <div className="bg-yellow-300 text-gray-900 text-center p-3 mt-4 rounded-lg shadow-md w-full max-w-md">
+    ⚠️ <strong>Disclaimer:</strong> While registering, please wait until you Check the <strong>"Registration successful!"</strong> alert box after making payment.
+  </div>
 
   {/* Form */}
   <div className="bg-white shadow-lg rounded-2xl p-6 mt-6 w-full max-w-md text-gray-900">
