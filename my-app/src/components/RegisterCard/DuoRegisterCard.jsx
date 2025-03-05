@@ -184,9 +184,9 @@ function handleProceed (){
         className="p-3 border border-gray-300 rounded-lg text-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="">Select Event</option>
-        <option value="Coding-competition">Crossword (11th Mar)</option>
-        <option value="Hackathon">Photography (11th Mar)</option>
-        <option value="Lan-games">SharkTank (12th Mar)</option>
+        <option value="Crossword">Crossword (11th Mar)</option>
+        <option value="Photography">Photography (11th Mar)</option>
+        <option value="SharkTank">SharkTank (12th Mar)</option>
       </select>
 
       {formData.type === "duo" && (

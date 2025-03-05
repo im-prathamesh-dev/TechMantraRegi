@@ -185,11 +185,11 @@ function handleProceed (){
         className="p-3 border border-gray-300 rounded-md text-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="">Select Event</option>
-        <option value="Lan-games">BGMI The Last DeadShot (11th Mar)</option>
+        <option value="Lan Games BGMI">Lan Games BGMI (11th Mar)</option>
         <option value="Hackathon">Hackathon (11th Mar)</option>
-        <option value="Short-movie-making">Short Movie Making (11th Mar)</option>
-        <option value="treasure-hunt">Treasure Hunt (12th Mar)</option>
-        <option value="TBG">Team Building Game (12th Mar)</option>
+        <option value="Short Movie Making">Short Movie Making (11th Mar)</option>
+        <option value="Treasure Hunt">Treasure Hunt (12th Mar)</option>
+        <option value="Team Building Game">Team Building Game (12th Mar)</option>
       </select>
 
       {/* Squad Participants Section */}

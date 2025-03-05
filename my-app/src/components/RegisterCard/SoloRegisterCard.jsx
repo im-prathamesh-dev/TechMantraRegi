@@ -190,12 +190,12 @@ const handleChanges = (e) => {
             className="p-3 border border-gray-300 rounded-lg text-lg bg-gray-100 focus:ring-2 focus:ring-blue-500 outline-none"
           >
             <option value="">Select Event</option>
-            <option value="Coding-competition">Byte Battle (11th Mar)</option>
-            <option value="Lan-games">Tech Meme (11th Mar)</option>
-            <option value="Hackathon">FrontendFiesta (12th Mar)</option>
-            <option value="Short-movie-making">Online Quiz (12th Mar)</option>
-            <option value="CrossWord">Poster Competition (12th Mar)</option>
-            <option value="Tech Meme">The Doodle League (12th Mar)</option>
+            <option value="Byte Battle">Byte Battle (11th Mar)</option>
+            <option value="Tech Meme Creation">Tech Meme Creation (11th Mar)</option>
+            <option value="Web Page Design">Web Page Design (12th Mar)</option>
+            <option value="Online Quiz ">Online Quiz (12th Mar)</option>
+            <option value="Poster Competition">Poster Competition (12th Mar)</option>
+            <option value="Doodle Competition">Doodle Competition (12th Mar)</option>
           </select>
 
           {showPaymentButton ? (
