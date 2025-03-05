@@ -1,5 +1,6 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
+import {Toaster} from "react-hot-toast"
 
 import './App.css'
 import SoloRegisterCard from "./components/RegisterCard/SoloRegisterCard.jsx"
@@ -18,7 +19,7 @@ function App() {
 
    
     <Routes>
-
+    <Toaster position="top-center" reverseOrder={false} />
     
     <Route element={<NewStyle/>} path="/" />
     

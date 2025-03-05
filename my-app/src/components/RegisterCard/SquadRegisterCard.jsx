@@ -2,6 +2,7 @@ import React from "react";
 import PaymentButton from "../PaymentButton";
 import { Link } from "react-router";
 import { useState } from "react";
+import toast from "react-hot-toast"
 
 
 
@@ -96,10 +97,11 @@ const addParticipant = () => {
 function handleProceed (){
     // console.log(formData);
     if (!formData.clgname || !formData.name || !formData.email || !formData.class || !formData.event|| !formData.number || formData.participants.length < 4  ||formData.participants.every((p) => p.trim() == "" )){
-        alert("Fill the information");
+      toast.error("Please fill in all required information!");
         
     }else{
         setShowPaymentButton(true);
+        toast.success("Proceeding to payment...");
         
     }}
  
@@ -126,7 +128,7 @@ function handleProceed (){
   <p className="font-semibold text-center">Anurag Shastri: 7798177002</p>
       {/* Disclaimer Message */}
       <div className="bg-yellow-300 text-gray-900 text-center p-3 mt-4 rounded-lg shadow-md w-full max-w-md">
-    ⚠️ <strong>Disclaimer:</strong> While registering, please wait until you Check the <strong>"Registration successful!"</strong> alert box after making payment.
+    ⚠️ <strong>Disclaimer:</strong> While registering, please wait until you get <strong>"Registration successful!"</strong> notification after making payment.
   </div>
 
   {/* Form Container */}

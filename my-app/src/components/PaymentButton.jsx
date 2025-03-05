@@ -1,4 +1,5 @@
 import React from "react";
+import toast from "react-hot-toast";
 
 export default function PaymentButton({amount,data}) {
   // console.log("Payment Button" , amount);
@@ -17,7 +18,7 @@ export default function PaymentButton({amount,data}) {
   const handlePayment = async () => {
     const isLoaded = await loadRazorpayScript();
     if (!isLoaded) {
-      alert("Failed to load Razorpay SDK. Check your internet connection.");
+      toast.error("Failed to load. Check your internet connection.");
       return;
     }
 
@@ -45,8 +46,7 @@ export default function PaymentButton({amount,data}) {
           // console.log("Payment Successful:", response);
           // console.log("Payment ID:", response.razorpay_payment_id);
           
-          alert(`Payment Successful! Your Payment ID: ${response.razorpay_payment_id}`);
-      
+          toast.success(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);      
           // Now send the Payment ID to your backend
           try {
             const verifyResponse = await fetch("https://techmantraregi.onrender.com/api/v1/register/verify-payment", {
@@ -63,8 +63,7 @@ export default function PaymentButton({amount,data}) {
             // console.log("Payment Verification:", verificationData);
       
             if (verifyResponse.ok) {
-              alert("Payment verified successfully!");
-      
+              toast.success("Payment verified successfully!");      
               // Register the user after successful payment verification
               await fetch("https://techmantraregi.onrender.com/api/v1/register/makeRegistration", {
                 method: "POST",
@@ -72,13 +71,13 @@ export default function PaymentButton({amount,data}) {
                 body: JSON.stringify({ data, payment_id: response.razorpay_payment_id }), // ✅ Sending Payment ID to Backend
               });
       
-              alert("Registration successful!");
+              toast.success("Registration successful!");
             } else {
-              alert("Payment verification failed. Please contact support.");
+              toast.error("Payment verification failed. Please contact support team.");
             }
           } catch (err) {
-            console.error("Payment verification failed:", err);
-            alert("Payment verification failed. Please try again.");
+            // console.error("Payment verification failed:", err);
+            toast.error("Payment verification failed. Please try again.");
           }
         },
         prefill: {
@@ -96,7 +95,7 @@ export default function PaymentButton({amount,data}) {
       const rzpay = new window.Razorpay(options);
       rzpay.open();
     } catch (err) {
-      alert("Error creating order: " + err.message);
+      toast.error("Error creating : " + err.message);
     }
   };
 
