@@ -17,8 +17,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Status Check Route ✅
-app.get("/api/v1/status", (req, res) => {
+// Status Check Route ✅ 
+app.post("/api/v1/status", (req, res) => {
   res.status(200).json({
     status: "ok",
     message: "Server is running",
