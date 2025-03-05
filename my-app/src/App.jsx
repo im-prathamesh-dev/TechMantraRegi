@@ -17,9 +17,9 @@ function App() {
     <>
     
 
-   
-    <Routes>
     <Toaster position="top-center" reverseOrder={false} />
+    <Routes>
+    
     
     <Route element={<NewStyle/>} path="/" />
     
