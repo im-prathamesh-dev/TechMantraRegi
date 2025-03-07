@@ -127,8 +127,16 @@ function handleProceed (){
   <p className="font-semibold text-center">Vaishnav Ghadge: 7218329602</p>
   <p className="font-semibold text-center">Anurag Shastri: 7798177002</p>
       {/* Disclaimer Message */}
-      <div className="bg-yellow-300 text-gray-900 text-center p-3 mt-4 rounded-lg shadow-md w-full max-w-md">
+      <div className="  mt-3 bg-red-600 text-white p-4 rounded-2xl shadow-lg flex items-center justify-between max-w-md text-center">
+  <div className="flex flex-col items-center space-x-2">
+    
+    <span className="text-lg font-semibold ">⚠️<b>FamPay </b> Payments are not allowed.</span>
+    <span>If no alternative is available, please contact the volunteers listed above.</span>
+  </div>
+</div>
+  <div className="bg-yellow-300 text-gray-900 text-center p-3 mt-4 rounded-lg shadow-md w-full max-w-md">
     ⚠️ <strong>Disclaimer:</strong> While registering, please wait until you get <strong>"Registration successful!"</strong> notification after making payment.
+    
   </div>
 
   {/* Form Container */}
