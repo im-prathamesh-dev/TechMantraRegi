@@ -78,10 +78,10 @@ function NewStyle() {
           <div className="mt-3 text-center">
             <p className="font-medium">Events</p>
             <p className="text-gray-700 text-sm">LAN Games BGMI</p>
-            <p className="text-gray-700 text-sm">Lan Games Free Fire</p>
+            {/* <p className="text-gray-700 text-sm">Lan Games Free Fire</p> */}
             <p className="text-gray-700 text-sm">Hackathon</p>
             <p className="text-gray-700 text-sm">Short Movie Making</p>
-            <p className="text-gray-700 text-sm">Treasure Hunt</p>
+            {/* <p className="text-gray-700 text-sm">Treasure Hunt</p> */}
             <p className="text-gray-700 text-sm">Team Building Games</p>
           </div>
 
