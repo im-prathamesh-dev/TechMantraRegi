@@ -194,10 +194,10 @@ function handleProceed (){
       >
         <option value="">Select Event</option>
         <option value="Lan Games BGMI">Lan Games BGMI (11th Mar)</option>
-        <option value="Lan Games Free Fire">Lan Games Free Fire (11th Mar)</option>
+        {/* <option value="Lan Games Free Fire">Lan Games Free Fire (11th Mar)</option> */}
         <option value="Hackathon">Hackathon (11th Mar)</option>
         <option value="Short Movie Making">Short Movie Making (11th Mar)</option>
-        <option value="Treasure Hunt">Treasure Hunt (12th Mar)</option>
+        {/* <option value="Treasure Hunt">Treasure Hunt (12th Mar)</option> */}
         <option value="Team Building Game      ">Team Building Game (12th Mar)</option>
       </select>
 
