@@ -193,7 +193,7 @@ function handleProceed (){
         className="p-3 border border-gray-300 rounded-md text-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="">Select Event</option>
-        <option value="Lan Games BGMI">Lan Games BGMI (11th Mar)</option>
+        {/* <option value="Lan Games BGMI">Lan Games BGMI (11th Mar)</option> */}
         {/* <option value="Lan Games Free Fire">Lan Games Free Fire (11th Mar)</option> */}
         <option value="Hackathon">Hackathon (11th Mar)</option>
         <option value="Short Movie Making">Short Movie Making (11th Mar)</option>
