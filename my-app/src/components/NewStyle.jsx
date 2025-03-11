@@ -26,8 +26,8 @@ function NewStyle() {
 
           <div className="mt-3 text-center">
             <p className="font-medium">Events</p>
-            <p className="text-gray-700 text-sm">Byte Battle</p>
-            <p className="text-gray-700 text-sm">Tech Meme Creation</p>
+            {/* <p className="text-gray-700 text-sm">Byte Battle</p> */}
+            {/* <p className="text-gray-700 text-sm">Tech Meme Creation</p> */}
             <p className="text-gray-700 text-sm">Web Page Design</p>
             <p className="text-gray-700 text-sm">Online Quiz</p>
             <p className="text-gray-700 text-sm">Poster Competition</p>
@@ -53,9 +53,9 @@ function NewStyle() {
 
           <div className="mt-3 text-center">
             <p className="font-medium">Events</p>
-            <p className="text-gray-700 text-sm">Crossword</p>
+            {/* <p className="text-gray-700 text-sm">Crossword</p> */}
             <p className="text-gray-700 text-sm">Shark Tank</p>
-            <p className="text-gray-700 text-sm">Photography</p>
+            {/* <p className="text-gray-700 text-sm">Photography</p> */}
           </div>
 
           <Link
@@ -79,8 +79,8 @@ function NewStyle() {
             <p className="font-medium">Events</p>
             {/* <p className="text-gray-700 text-sm">LAN Games BGMI</p> */}
             {/* <p className="text-gray-700 text-sm">Lan Games Free Fire</p> */}
-            <p className="text-gray-700 text-sm">Hackathon</p>
-            <p className="text-gray-700 text-sm">Short Movie Making</p>
+            {/* <p className="text-gray-700 text-sm">Hackathon</p> */}
+            {/* <p className="text-gray-700 text-sm">Short Movie Making</p> */}
             {/* <p className="text-gray-700 text-sm">Treasure Hunt</p> */}
             <p className="text-gray-700 text-sm">Team Building Games</p>
           </div>
