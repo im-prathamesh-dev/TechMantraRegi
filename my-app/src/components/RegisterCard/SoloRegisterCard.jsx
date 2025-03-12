@@ -205,7 +205,7 @@ const handleChanges = (e) => {
             {/* <option value="Web Page Design">Web Page Design (12th Mar)</option> */}
             <option value="Online Quiz ">Online Quiz (12th Mar)</option>
             <option value="Poster Competition">Poster Competition (12th Mar)</option>
-            <option value="Doodle Competition">Doodle Competition (12th Mar)</option>
+            {/* <option value="Doodle Competition">Doodle Competition (12th Mar)</option> */}
           </select>
 
 
