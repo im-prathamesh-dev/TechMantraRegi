@@ -7,6 +7,7 @@ import SoloRegisterCard from "./components/RegisterCard/SoloRegisterCard.jsx";
 import DuoRegisterCard from "./components/RegisterCard/DuoRegisterCard.jsx";
 import SquadRegisterCard from "./components/RegisterCard/SquadRegisterCard.jsx";
 import NewStyle from "./components/NewStyle.jsx";
+import FinalStyle from "./components/FinalStyle.jsx";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Analytics />
       <Toaster position="top-center" reverseOrder={false} />
       <Routes>
-        <Route element={<NewStyle />} path="/" />
+        {/* <Route element={<NewStyle />} path="/" /> */}
+        <Route element={<FinalStyle/>} path="/" />
 
         <Route element={<SoloRegisterCard />} path="/SoloRegistration" />
         <Route element={<DuoRegisterCard />} path="/DuoRegistration" />
