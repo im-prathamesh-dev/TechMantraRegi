@@ -202,11 +202,12 @@ const handleChanges = (e) => {
             <option value="">Select Event</option>
             {/* <option value="Byte Battle">Byte Battle (11th Mar)</option> */}
             {/* <option value="Tech Meme Creation">Tech Meme Creation (11th Mar)</option> */}
-            <option value="Web Page Design">Web Page Design (12th Mar)</option>
+            {/* <option value="Web Page Design">Web Page Design (12th Mar)</option> */}
             <option value="Online Quiz ">Online Quiz (12th Mar)</option>
             <option value="Poster Competition">Poster Competition (12th Mar)</option>
             <option value="Doodle Competition">Doodle Competition (12th Mar)</option>
           </select>
+
 
           {showPaymentButton ? (
             <PaymentButton amount={50} data={formData} />
