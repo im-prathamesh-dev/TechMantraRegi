@@ -28,10 +28,10 @@ function NewStyle() {
             <p className="font-medium">Events</p>
             {/* <p className="text-gray-700 text-sm">Byte Battle</p> */}
             {/* <p className="text-gray-700 text-sm">Tech Meme Creation</p> */}
-            <p className="text-gray-700 text-sm">Web Page Design</p>
+            {/* <p className="text-gray-700 text-sm">Web Page Design</p> */}
             <p className="text-gray-700 text-sm">Online Quiz</p>
             <p className="text-gray-700 text-sm">Poster Competition</p>
-            <p className="text-gray-700 text-sm">Doodle Competition</p>
+            {/* <p className="text-gray-700 text-sm">Doodle Competition</p> */}
           </div>
 
           <Link
