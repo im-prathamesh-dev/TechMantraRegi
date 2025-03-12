@@ -82,15 +82,16 @@ function NewStyle() {
             {/* <p className="text-gray-700 text-sm">Hackathon</p> */}
             {/* <p className="text-gray-700 text-sm">Short Movie Making</p> */}
             {/* <p className="text-gray-700 text-sm">Treasure Hunt</p> */}
-            <p className="text-gray-700 text-sm">Team Building Games</p>
+            {/* <p className="text-gray-700 text-sm">Team Building Games</p> */}
+            <p className="mt-2 text-gray-600 text-center">Registrations Closed</p>
           </div>
 
-          <Link
+          {/* <Link
             to="/SquadRegistration"
             className="mt-9 w-full inline-block text-center bg-orange-500 text-white font-semibold py-2 rounded-xl hover:bg-orange-600 transition"
           >
             Register for Squad Event
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
