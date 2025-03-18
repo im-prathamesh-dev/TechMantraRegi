@@ -16,10 +16,10 @@ TechMantra is an advanced event management system designed for **Zeal Institute'
 
 ## 🛠️ Tech Stack
 
-🔹 **Frontend:** ReactJs <br>
+🔹 **Frontend:** HTML, CSS, JavaScript <br>
 🔹 **Backend:** Node.js, Express.js <br>
 🔹 **Database:** MongoDB <br>
-🔹 **Payment Gateway:** Razorpay API <br>
+🔹 **Payment Gateway:** PhonePe API <br>
 
 ---
 
@@ -47,8 +47,8 @@ npm start
 
 ## 👨‍💻 Contributors
 
-- **Prathamesh Prabhakar Devrukhakar**
-- **Jay Bhende**
+- [**Prathamesh Prabhakar Devrukhakar**](https://github.com/im-prathamesh-dev)
+- [**Jay Bhende**](https://github.com/JayBhende05)
 
 ---
 
