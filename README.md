@@ -16,10 +16,10 @@ TechMantra is an advanced event management system designed for **Zeal Institute'
 
 ## 🛠️ Tech Stack
 
-🔹 **Frontend:** HTML, CSS, JavaScript <br>
+🔹 **Frontend:** ReactJs <br>
 🔹 **Backend:** Node.js, Express.js <br>
 🔹 **Database:** MongoDB <br>
-🔹 **Payment Gateway:** PhonePe API <br>
+🔹 **Payment Gateway:** Razorpay API <br>
 
 ---
 
